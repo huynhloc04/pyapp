@@ -15,14 +15,14 @@ from app.core.security import (
 )
 
 
-router = APIRouter(prefix="/google", tags=["Google SSO"])
+router = APIRouter(prefix="/google", tags=["google-sso"])
 
 
 def get_google_sso() -> GoogleSSO:
     return GoogleSSO(
         settings.GOOGLE_CLIENT_ID,
         settings.GOOGLE_CLIENT_SECRET,
-        redirect_uri=f"http://{settings.HOST}:{settings.PORT}/api/v1/google/callback",
+        redirect_uri=f"http://{settings.HOST}:{settings.PORT}/v1/google/callback",
         allow_insecure_http=True,
     )
 

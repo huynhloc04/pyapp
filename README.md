@@ -67,6 +67,8 @@ Currently, I am hosting the API on a remote server, on public port `13.229.185.2
 curl http://13.229.185.26:8080
 ```
 
+Access http://13.229.185.26:5557 to track all information about the Celery: Worker, Tasks, Broker, ...
+
 # Developer Guide
 
 ## Techstack
@@ -77,13 +79,14 @@ curl http://13.229.185.26:8080
 - SQLModel (SQLAlchemy + Pydantic): ORM for interacting with the database and validate data.
 - Alembic: Database migrations.
 - PostgreSQL: Database for storing data.
+- SMTP: Send mail.
 - Celery: Distributed task queue that allows users to execute task asynchronously.
 - Redis: Message broker for Celery.
 - Flower: web-based monitoring tool for Celery.
 - Docker: Creating, deploying, and running applications
 - ShipEngine: Rendering PDF shipping label (fulfillment)
 
-Note: I use Celery for sending email, Flower to monitor Celery's activities
+Note: I use Celery for sending email, Flower to monitor Celery's activities. But you can also use `BackgroundTask` of FastAPI instead of Celery for more easier.
 
 ## Architecture Overview
 
