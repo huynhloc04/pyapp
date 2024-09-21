@@ -1,5 +1,9 @@
 # Standard FastAPI Application
 
+### Project Requirements
+
+![alt text](figures/requirements.jpg)
+
 ## Local setup
 
 The project uses [Poetry](https://python-poetry.org/) for dependency management
