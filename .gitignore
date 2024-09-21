@@ -1,0 +1,9 @@
+# .env
+**/__pypackages__/      
+**/__pycache__/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+migrations/versions/*.py
+.vercel
+
+
+pyapp.code-workspace
+postgres/postgres_data/

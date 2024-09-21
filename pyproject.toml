@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "auth"
+version = "0.1.0"
+description = ""
+authors = ["huynhloc04 <hloc5874@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.112.0"}
+pydantic-settings = "^2.4.0"
+sqlalchemy = "^2.0.31"
+sqlmodel = "^0.0.21"
+asyncpg = "^0.29.0"
+uuid7 = "^0.1.0"
+passlib = "^1.7.4"
+python-jose = "^3.3.0"
+fastapi-events = "^0.11.1"
+alembic = "^1.13.2"
+fastapi-sso = "^0.15.0"
+requests = "^2.32.3"
+celery = "^5.4.0"
+python-dotenv = "^1.0.1"
+redis = "^5.0.8"
+flower = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,93 @@
+2024-09-13 17:48:18,713 - Item 066e4187-2b22-7c22-8000-8b3cb0a599c6: Created, {'name': 'starter', 'discount_amount': 0.05}
+2024-09-13 17:48:44,962 - Item 066e4188-cf46-7cbb-8000-e4e64386ff8c: Created, {'name': 'professional', 'discount_amount': 0.07}
+2024-09-13 17:48:55,535 - Item 066e4189-7874-7050-8000-338f7edd006e: Created, {'name': 'vip', 'discount_amount': 0.1}
+2024-09-13 17:51:14,185 - Item 066e4192-22da-72ac-8000-4b04602f278c: Created, {'name': 'manl', 'discount_amount': 0.2}
+2024-09-13 17:51:45,176 - Item 066e4192-22da-72ac-8000-4b04602f278c: Updated, {'name': '=======', 'discount_amount': 0.5}
+2024-09-13 17:52:00,632 - Item 066e4192-22da-72ac-8000-4b04602f278c: Deleted, None
+2024-09-13 18:47:07,703 - Item None: Error, Error creating record: Class 'app.models.product.ProductBase' is not mapped
+2024-09-13 18:47:34,368 - Item 066e4265-65c6-7a44-8000-1a1bb3eca20b: Created, {'name': 'IPhone16', 'base_price': 160.0, 'description': None}
+2024-09-13 18:55:34,907 - Item 066e4265-65c6-7a44-8000-1a1bb3eca20b: Updated, {'name': None, 'base_price': None, 'description': 'Mau IPhone moi ra mat khong lau!'}
+2024-09-13 18:56:03,046 - Item 066e4265-65c6-7a44-8000-1a1bb3eca20b: Updated, {'name': None, 'base_price': 35000000.0, 'description': None}
+2024-09-13 22:49:31,819 - Item 066e45f0-bce0-7681-8000-f9151505d587: Created, {'name': 'store_1', 'address': 'Thanh Thai Quan 10'}
+2024-09-13 22:52:45,410 - Item 066e45fc-d65e-7e0b-8000-dc184941a268: Created, {'name': 'store_2', 'address': '136 Nguyen Tri Phuong Quan 5'}
+2024-09-13 22:53:01,399 - Item 066e45fd-d646-764e-8000-47ae1e6d0f1a: Created, {'name': 'store_3', 'address': '22 Hoa Hai Quan 3'}
+2024-09-13 23:30:53,375 - Item 066e468b-d5bf-74f1-8000-3183347aedb5: Created, {'name': 'warehouse', 'address': 'Khu che xuat Linh Trung', 'is_store': False}
+2024-09-13 23:31:05,318 - Item 066e468c-94ff-79e4-8000-52b1399fff06: Created, {'name': 'store_3', 'address': '86 Kha Van Can, Thu Duc', 'is_store': True}
+2024-09-13 23:31:14,354 - Item 066e468d-258c-7627-8000-dd11ceafcb7c: Created, {'name': 'store_2', 'address': '202 Le Lai, District 1', 'is_store': True}
+2024-09-13 23:31:21,024 - Item 066e468d-9047-7f6e-8000-43fb0b5238ad: Created, {'name': 'store_1', 'address': '136 Nguyen Tri Phuong, District 5', 'is_store': True}
+2024-09-13 23:40:52,061 - Item 066e46b1-40b8-7b87-8000-1d68ec2a0a40: Created, {'quantity': 2, 'shipping_method': 'pickup', 'store_address': '136 Nguyen Tri Phuong, District 5', 'product_id': UUID('066e4265-65c6-7a44-8000-1a1bb3eca20b'), 'user_id': UUID('066e41b2-4e88-72db-8000-7a37aa2fe9c2'), 'total_price': 4900000.000000001}
+2024-09-13 23:44:22,276 - Item 066e46be-6438-758b-8000-35b4ed3bf4b5: Created, {'quantity': 2, 'shipping_method': 'pickup', 'store_address': '136 Nguyen Tri Phuong, District 5', 'product_id': UUID('066e4265-65c6-7a44-8000-1a1bb3eca20b'), 'user_id': UUID('066e41b2-4e88-72db-8000-7a37aa2fe9c2'), 'total_price': 4900000.000000001}
+2024-09-14 09:31:04,508 - Item 066e4f56-87e9-77a5-8000-86712ee56ba4: Created, {'name': 'starter', 'discount_percent': 0.05}
+2024-09-14 09:31:16,522 - Item 066e4f57-483f-7153-8000-dcf86ae6013a: Created, {'name': 'professional', 'discount_percent': 0.07}
+2024-09-14 09:31:28,503 - Item 066e4f58-07eb-75b3-8000-cfbd5e093d38: Created, {'name': 'vip', 'discount_percent': 0.1}
+2024-09-14 09:33:35,200 - Item 066e4265-65c6-7a44-8000-1a1bb3eca20b: Deleted, None
+2024-09-14 09:34:19,347 - Item 066e4f62-b564-740f-8000-c563a39f2d58: Created, {'name': 'Apolo T-shirt', 'base_price': 100000.0, 'description': 'This is an unique shirt'}
+2024-09-14 09:59:30,419 - Item None: Error, Error creating record: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.NotNullViolationError'>: null value in column "fulfill_at" of relation "orders" violates not-null constraint
+DETAIL:  Failing row contains (freeship, Khu che xuat Linh Trung, 93000, 2024-09-14 02:59:30.411967, 2024-09-14 02:59:30.411971, 066e4fc1-2697-771b-8000-0097c5fd8af9, 066e41a3-bfaa-73af-8000-db41ed2c8f86, pending, null).
+[SQL: INSERT INTO orders (shipping_method, shipping_location, total_price, created_at, updated_at, id, user_id, fulfill_status, fulfill_at) VALUES ($1::VARCHAR, $2::VARCHAR, $3::FLOAT, $4::TIMESTAMP WITHOUT TIME ZONE, $5::TIMESTAMP WITHOUT TIME ZONE, $6::UUID, $7::UUID, $8::VARCHAR, $9::TIMESTAMP WITHOUT TIME ZONE)]
+[parameters: ('freeship', 'Khu che xuat Linh Trung', 93000.0, datetime.datetime(2024, 9, 14, 2, 59, 30, 411967), datetime.datetime(2024, 9, 14, 2, 59, 30, 411971), UUID('066e4fc1-2697-771b-8000-0097c5fd8af9'), UUID('066e41a3-bfaa-73af-8000-db41ed2c8f86'), 'pending', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-14 09:59:59,139 - Item None: Error, Error creating record: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.NotNullViolationError'>: null value in column "fulfill_at" of relation "orders" violates not-null constraint
+DETAIL:  Failing row contains (freeship, Khu che xuat Linh Trung, 93000, 2024-09-14 02:59:59.132246, 2024-09-14 02:59:59.132257, 066e4fc2-f21d-7bfb-8000-b8b81d9c5d79, 066e41a3-bfaa-73af-8000-db41ed2c8f86, pending, null).
+[SQL: INSERT INTO orders (shipping_method, shipping_location, total_price, created_at, updated_at, id, user_id, fulfill_status, fulfill_at) VALUES ($1::VARCHAR, $2::VARCHAR, $3::FLOAT, $4::TIMESTAMP WITHOUT TIME ZONE, $5::TIMESTAMP WITHOUT TIME ZONE, $6::UUID, $7::UUID, $8::VARCHAR, $9::TIMESTAMP WITHOUT TIME ZONE)]
+[parameters: ('freeship', 'Khu che xuat Linh Trung', 93000.0, datetime.datetime(2024, 9, 14, 2, 59, 59, 132246), datetime.datetime(2024, 9, 14, 2, 59, 59, 132257), UUID('066e4fc2-f21d-7bfb-8000-b8b81d9c5d79'), UUID('066e41a3-bfaa-73af-8000-db41ed2c8f86'), 'pending', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-14 10:00:14,196 - Item None: Error, Error creating record: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.NotNullViolationError'>: null value in column "fulfill_at" of relation "orders" violates not-null constraint
+DETAIL:  Failing row contains (freeship, Khu che xuat Linh Trung, 93000, 2024-09-14 03:00:14.191101, 2024-09-14 03:00:14.191109, 066e4fc3-e30e-7d1f-8000-58e1a8592170, 066e41a3-bfaa-73af-8000-db41ed2c8f86, pending, null).
+[SQL: INSERT INTO orders (shipping_method, shipping_location, total_price, created_at, updated_at, id, user_id, fulfill_status, fulfill_at) VALUES ($1::VARCHAR, $2::VARCHAR, $3::FLOAT, $4::TIMESTAMP WITHOUT TIME ZONE, $5::TIMESTAMP WITHOUT TIME ZONE, $6::UUID, $7::UUID, $8::VARCHAR, $9::TIMESTAMP WITHOUT TIME ZONE)]
+[parameters: ('freeship', 'Khu che xuat Linh Trung', 93000.0, datetime.datetime(2024, 9, 14, 3, 0, 14, 191101), datetime.datetime(2024, 9, 14, 3, 0, 14, 191109), UUID('066e4fc3-e30e-7d1f-8000-58e1a8592170'), UUID('066e41a3-bfaa-73af-8000-db41ed2c8f86'), 'pending', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-14 10:06:54,716 - Item None: Error, Error creating record: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.NotNullViolationError'>: null value in column "fulfill_at" of relation "orders" violates not-null constraint
+DETAIL:  Failing row contains (freeship, Khu che xuat Linh Trung, 93000, 2024-09-14 03:06:54.712113, 2024-09-14 03:06:54.712117, 066e4fdc-eb64-7d70-8000-cb76c09be8e2, 066e41a3-bfaa-73af-8000-db41ed2c8f86, pending, null).
+[SQL: INSERT INTO orders (shipping_method, shipping_location, total_price, created_at, updated_at, id, user_id, fulfill_status, fulfill_at) VALUES ($1::VARCHAR, $2::VARCHAR, $3::FLOAT, $4::TIMESTAMP WITHOUT TIME ZONE, $5::TIMESTAMP WITHOUT TIME ZONE, $6::UUID, $7::UUID, $8::VARCHAR, $9::TIMESTAMP WITHOUT TIME ZONE)]
+[parameters: ('freeship', 'Khu che xuat Linh Trung', 93000.0, datetime.datetime(2024, 9, 14, 3, 6, 54, 712113), datetime.datetime(2024, 9, 14, 3, 6, 54, 712117), UUID('066e4fdc-eb64-7d70-8000-cb76c09be8e2'), UUID('066e41a3-bfaa-73af-8000-db41ed2c8f86'), 'pending', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-14 10:07:31,113 - Item None: Error, Error creating record: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.NotNullViolationError'>: null value in column "fulfill_at" of relation "orders" violates not-null constraint
+DETAIL:  Failing row contains (freeship, Khu che xuat Linh Trung, 93000, 2024-09-14 03:07:31.107027, 2024-09-14 03:07:31.107032, 066e4fdf-31b6-76b1-8000-611376324784, 066e41a3-bfaa-73af-8000-db41ed2c8f86, pending, null).
+[SQL: INSERT INTO orders (shipping_method, shipping_location, total_price, created_at, updated_at, id, user_id, fulfill_status, fulfill_at) VALUES ($1::VARCHAR, $2::VARCHAR, $3::FLOAT, $4::TIMESTAMP WITHOUT TIME ZONE, $5::TIMESTAMP WITHOUT TIME ZONE, $6::UUID, $7::UUID, $8::VARCHAR, $9::TIMESTAMP WITHOUT TIME ZONE)]
+[parameters: ('freeship', 'Khu che xuat Linh Trung', 93000.0, datetime.datetime(2024, 9, 14, 3, 7, 31, 107027), datetime.datetime(2024, 9, 14, 3, 7, 31, 107032), UUID('066e4fdf-31b6-76b1-8000-611376324784'), UUID('066e41a3-bfaa-73af-8000-db41ed2c8f86'), 'pending', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-14 10:13:59,070 - Item None: Error, Error creating record: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.NotNullViolationError'>: null value in column "fulfill_at" of relation "orders" violates not-null constraint
+DETAIL:  Failing row contains (freeship, Khu che xuat Linh Trung, 93000, 2024-09-14 03:13:59.062785, 2024-09-14 03:13:59.06279, 066e4ff7-7101-7339-8000-e81f2c9586ae, 066e41a3-bfaa-73af-8000-db41ed2c8f86, pending, null).
+[SQL: INSERT INTO orders (shipping_method, shipping_location, total_price, created_at, updated_at, id, user_id, fulfill_status, fulfill_at) VALUES ($1::VARCHAR, $2::VARCHAR, $3::FLOAT, $4::TIMESTAMP WITHOUT TIME ZONE, $5::TIMESTAMP WITHOUT TIME ZONE, $6::UUID, $7::UUID, $8::VARCHAR, $9::TIMESTAMP WITHOUT TIME ZONE)]
+[parameters: ('freeship', 'Khu che xuat Linh Trung', 93000.0, datetime.datetime(2024, 9, 14, 3, 13, 59, 62785), datetime.datetime(2024, 9, 14, 3, 13, 59, 62790), UUID('066e4ff7-7101-7339-8000-e81f2c9586ae'), UUID('066e41a3-bfaa-73af-8000-db41ed2c8f86'), 'pending', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-14 10:15:24,590 - Item None: Error, Error creating record: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.NotNullViolationError'>: null value in column "fulfill_at" of relation "orders" violates not-null constraint
+DETAIL:  Failing row contains (freeship, Khu che xuat Linh Trung, 93000, 2024-09-14 03:15:24.58442, 2024-09-14 03:15:24.584424, 066e4ffc-c959-7d11-8000-03f1e3f43f33, 066e41b2-4e88-72db-8000-7a37aa2fe9c2, pending, null).
+[SQL: INSERT INTO orders (shipping_method, shipping_location, total_price, created_at, updated_at, id, user_id, fulfill_status, fulfill_at) VALUES ($1::VARCHAR, $2::VARCHAR, $3::FLOAT, $4::TIMESTAMP WITHOUT TIME ZONE, $5::TIMESTAMP WITHOUT TIME ZONE, $6::UUID, $7::UUID, $8::VARCHAR, $9::TIMESTAMP WITHOUT TIME ZONE)]
+[parameters: ('freeship', 'Khu che xuat Linh Trung', 93000.0, datetime.datetime(2024, 9, 14, 3, 15, 24, 584420), datetime.datetime(2024, 9, 14, 3, 15, 24, 584424), UUID('066e4ffc-c959-7d11-8000-03f1e3f43f33'), UUID('066e41b2-4e88-72db-8000-7a37aa2fe9c2'), 'pending', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-14 10:16:22,209 - Item 066e5000-631c-7375-8000-d849e633bf88: Created, {'user_id': UUID('066e41b2-4e88-72db-8000-7a37aa2fe9c2'), 'total_price': 93000.0, 'shipping_method': 'freeship', 'shipping_location': 'Khu che xuat Linh Trung'}
+2024-09-14 10:16:57,755 - Item 066e5002-9bdc-7e6d-8000-06c3a81479f8: Created, {'user_id': UUID('066e41b2-4e88-72db-8000-7a37aa2fe9c2'), 'total_price': 93000.0, 'shipping_method': 'freeship', 'shipping_location': 'Khu che xuat Linh Trung'}
+2024-09-14 10:16:57,760 - Item None: Error, Error creating record: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.NotNullViolationError'>: null value in column "order_id" of relation "order_products" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null).
+[SQL: INSERT INTO order_products (quantity) VALUES ($1::INTEGER)]
+[parameters: (None,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-14 10:20:20,358 - Item 066e500f-458e-7a10-8000-4e2f51d6aca9: Created, {'user_id': UUID('066e41b2-4e88-72db-8000-7a37aa2fe9c2'), 'total_price': 93000.0, 'shipping_method': 'freeship', 'shipping_location': 'Khu che xuat Linh Trung'}
+2024-09-14 10:23:43,016 - Item 066e501b-f016-7e67-8000-d5f0af4bb723: Created, {'user_id': UUID('066e41b2-4e88-72db-8000-7a37aa2fe9c2'), 'total_price': 93000.0, 'shipping_method': 'freeship', 'shipping_location': 'Khu che xuat Linh Trung'}
+2024-09-14 11:08:31,621 - Item 066e50c3-f9bb-7de2-8000-0c469a61fd33: Created, {'user_id': UUID('066e5032-87a9-784b-8000-81b5920ac11f'), 'total_price': 475000.0, 'shipping_method': 'pickup', 'shipping_location': '202 Le Lai, District 1'}
+2024-09-14 11:09:40,485 - Item 066e50c8-47a2-7562-8000-857411dd8b02: Created, {'name': 'Razer mouse', 'base_price': 50000.0, 'description': 'This is high quality mouse'}
+2024-09-14 11:14:38,749 - Item 066e50da-ebe1-7cd6-8000-b0ff79a0e32f: Created, {'user_id': UUID('066e41b2-4e88-72db-8000-7a37aa2fe9c2'), 'total_price': 558000.0, 'shipping_method': 'pickup', 'shipping_location': '202 Le Lai, District 1'}
+2024-09-14 11:14:55,905 - Item 066e50db-fe5e-704c-8000-b2a79ddce9a5: Created, {'user_id': UUID('066e41b2-4e88-72db-8000-7a37aa2fe9c2'), 'total_price': 558000.0, 'shipping_method': 'pickup', 'shipping_location': '202 Le Lai, District 1'}
+2024-09-14 15:51:40,171 - Item 066e54e9-c284-79ed-8000-b19070f28ff6: Created, {'name': 'store_1', 'address': 'Hang Ma Street, Phu Dong', 'is_store': True}
+2024-09-14 15:51:57,285 - Item 066e54ea-d46a-7646-8000-d0a8e91131a8: Created, {'name': 'store_2', 'address': 'Hoai Nhon, Binh Dinh', 'is_store': True}
+2024-09-14 15:52:13,986 - Item 066e54eb-dfaa-7623-8000-43501df2b9eb: Created, {'name': 'store_3', 'address': 'Tan Duy Cuong, District 4', 'is_store': True}
+2024-09-14 15:52:31,350 - Item 066e54ec-f576-7821-8000-8ff7ebfb5724: Created, {'name': 'warehouse', 'address': 'Khu Che xuat Linh Trung', 'is_store': False}
+2024-09-14 15:54:48,503 - Item 066e54f5-87c7-7619-8000-1c4d442ba1e4: Created, {'user_id': UUID('066e54e0-1883-7f24-8000-c332bf6b290b'), 'total_price': 405000.0, 'shipping_method': 'pickup', 'shipping_location': '136 Nguyen Tri Phuong, District 5'}
+2024-09-14 15:54:48,511 - Item None: Error, Error creating record: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "order_products_pkey"
+DETAIL:  Key (order_id, product_id)=(066e54f5-87c7-7619-8000-1c4d442ba1e4, 066e4f62-b564-740f-8000-c563a39f2d58) already exists.
+[SQL: INSERT INTO order_products (order_id, product_id, quantity) VALUES ($1::UUID, $2::UUID, $3::INTEGER)]
+[parameters: [(UUID('066e54f5-87c7-7619-8000-1c4d442ba1e4'), UUID('066e4f62-b564-740f-8000-c563a39f2d58'), 2), (UUID('066e54f5-87c7-7619-8000-1c4d442ba1e4'), UUID('066e4f62-b564-740f-8000-c563a39f2d58'), 5)]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-14 15:57:18,486 - Item 066e54fe-e78b-7050-8000-989efdb619ff: Created, {'user_id': UUID('066e54e0-1883-7f24-8000-c332bf6b290b'), 'total_price': 405000.0, 'shipping_method': 'pickup', 'shipping_location': '136 Nguyen Tri Phuong, District 5'}
+2024-09-14 16:45:35,974 - Item 066e55b3-ff58-7b7c-8000-a7324a3eeb3a: Created, {'user_id': UUID('066e54dd-8c38-7775-8000-0ca2395510c5'), 'total_price': 450000.0, 'shipping_method': 'freeship', 'shipping_location': 'Khu che xuat Linh Trung', 'from_admin': False}
+2024-09-14 16:50:18,374 - Item 066e55c5-a5c3-741c-8000-0fc14bdb6004: Created, {'user_id': UUID('066e54dd-8c38-7775-8000-0ca2395510c5'), 'total_price': 720000.0, 'shipping_method': 'freeship', 'shipping_location': 'Khu che xuat Linh Trung', 'from_admin': False}
+2024-09-14 16:52:18,688 - Item 066e55cd-2a9a-72ef-8000-5856108375fc: Created, {'user_id': UUID('066e54dd-8c38-7775-8000-0ca2395510c5'), 'total_price': 720000.0, 'shipping_method': 'freeship', 'shipping_location': 'Khu che xuat Linh Trung', 'from_admin': False}
+2024-09-14 16:54:52,646 - Item 066e55d6-ca11-7897-8000-e991553d2d09: Created, {'user_id': UUID('066e54dd-8c38-7775-8000-0ca2395510c5'), 'total_price': 720000.0, 'shipping_method': 'freeship', 'shipping_location': 'Khu che xuat Linh Trung', 'from_admin': True}
+2024-09-14 16:54:52,813 - Item 066e55d6-cced-7176-8000-325a49b33afd: Created, {'user_id': UUID('066e54dd-8c38-7775-8000-0ca2395510c5'), 'total_price': 720000.0, 'shipping_method': 'freeship', 'shipping_location': 'Khu che xuat Linh Trung', 'from_admin': True}
+2024-09-15 16:59:40,581 - Item 066e54fe-e78b-7050-8000-989efdb619ff: Updated, {'fulfill_status': <FulfillStatus.fulfilled: 'fulfilled'>, 'fulfill_at': datetime.datetime(2024, 9, 15, 16, 59, 40, 559906)}
+2024-09-15 17:00:19,880 - Item 066e54fe-e78b-7050-8000-989efdb619ff: Updated, {'fulfill_status': <FulfillStatus.fulfilled: 'fulfilled'>, 'fulfill_at': datetime.datetime(2024, 9, 15, 17, 0, 19, 868232)}
+2024-09-15 17:45:42,678 - Item 066e54fe-e78b-7050-8000-989efdb619ff: Updated, {'fulfill_status': <FulfillStatus.fulfilled: 'fulfilled'>, 'fulfill_at': datetime.datetime(2024, 9, 15, 17, 45, 42, 657260)}
+2024-09-15 19:41:30,002 - Item 066e54fe-e78b-7050-8000-989efdb619ff: Updated, {'fulfill_status': <FulfillStatus.fulfilled: 'fulfilled'>, 'fulfill_at': datetime.datetime(2024, 9, 15, 19, 41, 29, 982047)}
+2024-09-15 19:49:57,436 - Item 066e55d6-ca11-7897-8000-e991553d2d09: Updated, {'fulfill_status': <FulfillStatus.fulfilled: 'fulfilled'>, 'fulfill_at': datetime.datetime(2024, 9, 15, 19, 49, 57, 419265)}
