@@ -90,6 +90,10 @@ Note: I use Celery for sending email, Flower to monitor Celery's activities. But
 
 ## Architecture Overview
 
+### System Architecture
+
+![](figures/system.jpg)
+
 The project is structured as follows:
 
 ```bash
@@ -189,7 +193,7 @@ Response codes that can be expected from the API:
   - Notifying customers via email or SMS (email in this case).
   - Generate the `tracking number` to track the order (Freeship method)
 
-=> Check the workflow [here](figures/workfow.jpg)
+=> The workflow is as follow: ![](figures/workfow.jpg)
 
 ## API documents
 
