@@ -86,7 +86,7 @@ Access http://13.229.185.26:5557 to track all information about the Celery: Work
 - Docker: Creating, deploying, and running applications
 - ShipEngine: Rendering PDF shipping label (fulfillment)
 
-Note: I use Celery for sending email, Flower to monitor Celery's activities. But you can also use `BackgroundTask` of FastAPI instead of Celery for more easier.
+Note: I use Celery for sending email, Flower to monitor Celery's activities. But you can also use `BackgroundTask` of FastAPI instead of Celery for ease.
 
 ## Architecture Overview
 
@@ -145,7 +145,8 @@ The database contains the following tables:
 - orders: (id, user_id, total_price, shipping_method, shipping_location, fulfill_status, fulfill_at, from_admin) - Information of an order of an customer.
 - order_product: (order_id, product_id, quantity) - Product information of a specific order.
 
-=> Check the Entity Reletionship Diagram of this app [here](figures/ERD.jpg).
+=> Check the Entity Reletionship Diagram of this app: 
+![](figures/ERD.jpg).
 
 ## Error Handling
 
@@ -162,31 +163,31 @@ Response codes that can be expected from the API:
 
 1. Account
 
-- Customers sign up an account `POST /v1/users/signup` (Please choose group for each customer `GET /v1/groups`).
+- Customers sign up for an account `POST /v1/users/signup` (Please choose group for each customer `GET /v1/groups`).
 - They can then log in through a call to `POST /v1/users/login` with username & password as form data
 
 2. Create products
 
-- BSA (Admin) creates products `POST /v1/products` (name, base_price and description)
+- BSA (Admin) creates products `POST /v1/products` (name, base_price, and description)
 - BSA can then manage (GET, UPDATE, DELETE) a product
 
 3. Order products
 
-- Both BSA or customer can place an order: ` POST /v1/orders`
-- We have some following information when place a new order:
+- Both BSA and customer can place an order: ` POST /v1/orders`
+- We have the following information when placing a new order:
   - Select shipping methods: Freeship or Pickup.
   - Select shipping location: Select from a list of BSA's stores (Pickup) or shipped from the main warehouse (Freeship).
   - Enter customer email to be shipped (BSA).
   - Enter product type and quantity.
 - The order status will be `unfulfilled` as default.
-- The discounts will be applied to prducts based on type of customer (5% for Starter, 7% for Professional and 10% for VIP).
+- The discounts will be applied to products based on the type of customer (5% for Starter, 7% for Professional, and 10% for VIP).
 
 4. Fulfillment (BSA)
 
 - BSA fulfill orders `POST /v1/orders/{order_id}/fulfill` by fill out all of the following information
   - ship_from (name, phone, address, city, ...)
   - ship_to (name, phone, address, city, ...)
-  - packages (all package's information: weight, height, ...)
+  - packages (all package information: weight, height, ...)
 - To be fulfilled, an order must go through some steps:
   - Updating order status: Change from "Unfulfilled" to "fulfilled".
   - Generating shipping labels.
